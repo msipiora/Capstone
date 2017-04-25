@@ -83,4 +83,8 @@ c:\users\mark\documents\visual studio 2015\Projects\Capstone5\Capstone5\obj\Debu
 c:\users\mark\documents\visual studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.csproj.GenerateResource.Cache
 c:\users\mark\documents\visual studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Mondaytable.resources
 c:\users\mark\documents\visual studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Weeklyspecialstospecials.resources
-c:\users\mark\documents\visual studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Tuesday.resources
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Wednesday.resources
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Wednesday1.resources
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Entireweek.resources
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.update.resources

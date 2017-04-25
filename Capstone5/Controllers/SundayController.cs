@@ -10,107 +10,107 @@ using Capstone5.Models;
 
 namespace Capstone5.Controllers
 {
-    public class MondayBarsController : Controller
+    public class SundayController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: MondayBars
+        // GET: Sunday
         public ActionResult Index()
         {
-            return View(db.MondayBars.ToList());
+            return View(db.SundayBars.ToList());
         }
 
-        // GET: MondayBars/Details/5
+        // GET: Sunday/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MondayBars mondayBars = db.MondayBars.Find(id);
-            if (mondayBars == null)
+            SundayBars sundayBars = db.SundayBars.Find(id);
+            if (sundayBars == null)
             {
                 return HttpNotFound();
             }
-            return View(mondayBars);
+            return View(sundayBars);
         }
 
-        // GET: MondayBars/Create
+        // GET: Sunday/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: MondayBars/Create
+        // POST: Sunday/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BarsID,BarName,Specials,DaytimeBusyness,EveningBusyness,NightTimeBusyness,AdditionalFeatures")] MondayBars mondayBars)
+        public ActionResult Create([Bind(Include = "BarsID,BarName,Specials,DaytimeBusyness,EveningBusyness,NightTimeBusyness,AdditionalFeatures")] SundayBars sundayBars)
         {
             if (ModelState.IsValid)
             {
-                db.MondayBars.Add(mondayBars);
+                db.SundayBars.Add(sundayBars);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(mondayBars);
+            return View(sundayBars);
         }
 
-        // GET: MondayBars/Edit/5
+        // GET: Sunday/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MondayBars mondayBars = db.MondayBars.Find(id);
-            if (mondayBars == null)
+            SundayBars sundayBars = db.SundayBars.Find(id);
+            if (sundayBars == null)
             {
                 return HttpNotFound();
             }
-            return View(mondayBars);
+            return View(sundayBars);
         }
 
-        // POST: MondayBars/Edit/5
+        // POST: Sunday/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BarsID,BarName,Specials,DaytimeBusyness,EveningBusyness,NightTimeBusyness,AdditionalFeatures")] MondayBars mondayBars)
+        public ActionResult Edit([Bind(Include = "BarsID,BarName,Specials,DaytimeBusyness,EveningBusyness,NightTimeBusyness,AdditionalFeatures")] SundayBars sundayBars)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(mondayBars).State = EntityState.Modified;
+                db.Entry(sundayBars).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(mondayBars);
+            return View(sundayBars);
         }
 
-        // GET: MondayBars/Delete/5
+        // GET: Sunday/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MondayBars mondayBars = db.MondayBars.Find(id);
-            if (mondayBars == null)
+            SundayBars sundayBars = db.SundayBars.Find(id);
+            if (sundayBars == null)
             {
                 return HttpNotFound();
             }
-            return View(mondayBars);
+            return View(sundayBars);
         }
 
-        // POST: MondayBars/Delete/5
+        // POST: Sunday/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            MondayBars mondayBars = db.MondayBars.Find(id);
-            db.MondayBars.Remove(mondayBars);
+            SundayBars sundayBars = db.SundayBars.Find(id);
+            db.SundayBars.Remove(sundayBars);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

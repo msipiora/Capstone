@@ -31,5 +31,11 @@ namespace Capstone5.Models
         }
 
         public DbSet<MondayBars> MondayBars { get; set; }
+        public DbSet<TuesdayBars> TuesdayBars { get; set; }
+        public DbSet<WednesdayBars> WednesdayBars { get;set;}
+        public DbSet<ThursdayBars> ThursdayBars { get; set; }
+        public DbSet<FridayBars> FridayBars { get; set; }
+        public DbSet<SaturdayBars> SaturdayBars { get; set; }
+        public DbSet<SundayBars> SundayBars { get; set; }
     }
 }

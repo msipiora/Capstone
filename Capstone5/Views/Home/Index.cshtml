@@ -18,8 +18,8 @@
             width: 200px;
             height: 600px;
             overflow: auto;
-            right: 700px;
-            left: 0px;
+            right: 800px;
+            left: 65px;
             top: 0px;
             bottom: 500px;
             cursor: pointer;
@@ -102,7 +102,11 @@
     <h4>Find bars in:
         </h4>
 </div>
-
+@if (!User.IsInRole("User")){ 
+<div align="right"><h4>
+    Log-in to access and contribute to the bar database!
+</h4></div>
+}
 <div id="locationField">
     <input id="autocomplete" ;="Enter a city" type="text" />
 </div>
@@ -110,7 +114,7 @@
     <div class="col-sm-9">
         <div id="map" style="height:600px" ; position:"center"></div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div id="listing">
             <table id="resultsTable">
                 <tbody id="results"></tbody>
