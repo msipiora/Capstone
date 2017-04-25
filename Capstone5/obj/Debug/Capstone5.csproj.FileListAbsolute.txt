@@ -88,3 +88,4 @@ C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debu
 C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Wednesday1.resources
 C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.Entireweek.resources
 C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.Migrations.update.resources
+C:\Users\Mark\Documents\Visual Studio 2015\Projects\Capstone5\Capstone5\obj\Debug\Capstone5.csprojResolveAssemblyReference.cache
